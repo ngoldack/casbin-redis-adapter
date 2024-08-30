@@ -1,4 +1,4 @@
-module github.com/mlsen/casbin-redis-adapter/v2
+module github.com/ngoldack/casbin-redis-adapter/v2
 
 go 1.13
 
