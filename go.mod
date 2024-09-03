@@ -1,4 +1,4 @@
-module github.com/ngoldack/casbin-redis-adapter/v3
+module github.com/ngoldack/casbin-redis-adapter/v4
 
 go 1.13
 

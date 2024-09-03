@@ -9,7 +9,7 @@ import (
 
 	"github.com/casbin/casbin/v2"
 
-	redisadapter "github.com/ngoldack/casbin-redis-adapter/v3"
+	redisadapter "github.com/ngoldack/casbin-redis-adapter/v4"
 
 	"github.com/redis/go-redis/v9"
 	"github.com/ory/dockertest/v3"
