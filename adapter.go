@@ -21,7 +21,7 @@ const (
 
 // Adapter is an adapter for policy storage based on Redis
 type Adapter struct {
-	redisCli *redis.Client
+	redisCli redis.UniversalClient
 }
 
 // NewFromDSN returns a new Adapter by using the given DSN.
@@ -43,6 +43,11 @@ func NewFromURL(url string) (adapter *Adapter, err error) {
 
 // NewFromClient returns a new instance of Adapter from an already existing go-redis client.
 func NewFromClient(redisCli *redis.Client) (adapter *Adapter) {
+	return &Adapter{redisCli: redisCli}
+}
+
+// NewFromUniversalClient returns a new instance of Adapter from an already existing go-redis UniversalClient.
+func NewFromUniversalClient(redisCli redis.UniversalClient) (adapter *Adapter) {
 	return &Adapter{redisCli: redisCli}
 }
 
