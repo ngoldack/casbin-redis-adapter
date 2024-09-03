@@ -11,7 +11,7 @@ import (
 	"github.com/casbin/casbin/v2/persist"
 
 	"github.com/casbin/casbin/v2/model"
-	"github.com/go-redis/redis/v8"
+	"github.com/redis/go-redis/v9"
 )
 
 const (

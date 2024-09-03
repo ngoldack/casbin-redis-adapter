@@ -2,6 +2,13 @@
 
 Casbin Redis Adapter is an adapter for [Casbin](https://github.com/casbin/casbin) based on [Redis](https://redis.io).
 
+## Fork changes
+
+This is a fork of https://github.com/novrian/casbin-redis-adapter with the following changes:
+
+- Updated to use v9 of [go-redis](https://github.com/redis/go-redis)
+- Implemented changes of this [PR](https://github.com/mlsen/casbin-redis-adapter/pull/5) to fix the issue with the `LoadPolicyArray` method
+
 ## Installation
 
     go get github.com/mlsen/casbin-redis-adapter
