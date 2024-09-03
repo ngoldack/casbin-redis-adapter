@@ -9,9 +9,9 @@ import (
 
 	"github.com/casbin/casbin/v2"
 
-	redisadapter "github.com/mlsen/casbin-redis-adapter/v2"
+	redisadapter "github.com/ngoldack/casbin-redis-adapter/v3"
 
-	"github.com/go-redis/redis/v8"
+	"github.com/redis/go-redis/v9"
 	"github.com/ory/dockertest/v3"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/suite"
